@@ -1,0 +1,24 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: voicey_development
+  pool: 5
+  username: tonycioara
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: voicey_test
+  pool: 5
+  username: tonycioara
+  password:
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: voicey_production
+  pool: 5
+  username: tonycioara
+  password:
