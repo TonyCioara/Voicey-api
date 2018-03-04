@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.5'
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# Use bcrypt for auth
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -39,3 +41,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :test do
+    gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+    gem 'database_cleaner', '~> 1.6', '>= 1.6.2'
+end
